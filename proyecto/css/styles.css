@@ -509,7 +509,7 @@ section > h1{
         width: 100vw;
         background-image: url("images/bkg-t.jpg");
         background-position:center ;
-        background-size:auto;
+        background-size:cover;
         background-attachment:fixed;
     }
     main  div >h1  {
