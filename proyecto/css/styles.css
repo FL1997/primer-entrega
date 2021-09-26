@@ -306,13 +306,13 @@ section > h1{
 
                 nav{
                                        
-                    width:90vw;
+                    width:70vw;
                     height: 7vh;
                     }
 
             #container{
                 height: 7vh;
-                width: 20vw;
+                width: 50vw;
                 
                 grid-template-columns: 2fr repeat(4, 1fr)  1.5fr 2fr 2rem .8fr;
                 grid-template-rows: 2vh 3vh 2vh;
@@ -339,6 +339,7 @@ section > h1{
 
                 width: 14vw;
                 padding: 6px;
+                margin-left:4rem ;
                 grid-column: 7 ;
                 grid-row: 2;
                 justify-self: flex-end;
@@ -452,6 +453,7 @@ section > h1{
     }
 
         nav{
+           
             float: right;
             width:150vw;
             height: 4vh;
@@ -461,9 +463,10 @@ section > h1{
         height: 9vh;
         width: 20vw;
         display: grid;
-        grid-template-columns: 2fr repeat(4, 1fr)  1.5fr 2fr 2rem .8fr;
-        grid-template-rows: 1vh 2vh 1vh;
+        grid-template-columns: 1fr repeat(4, 1fr) 1rem  15vw 2vh 5rem;
+        grid-template-rows: 1vh 2.5vh 1vh;
         position:relative ;
+        align-items:center;
 
 
     }
@@ -483,9 +486,10 @@ section > h1{
 
     #search-bar{
 
-        width: 14vw;
-        height:2vh;
+        width: 15vw;
+        height: 2vh;
         padding: 6px;
+        
         grid-column: 7 ;
         grid-row: 2;
         justify-self: flex-end;
@@ -499,9 +503,12 @@ section > h1{
         grid-column:8 ;
         grid-row: 2;                   
         align-self: center;
+      
 
        }
-
+    #carrito{
+        grid-column: 9 !important;
+    }
 
 
     main{
