@@ -16,9 +16,9 @@ class Libro{
           
                return (
                `<div  id="book-${this.id}" >
-                                   <img  class="pad-style" src="./miniaturas/libro${this.id}.jpg" alt="">
+                                   <img  class="pad-style"  src="./miniaturas/libro${this.id}.jpg" alt="">
                                    <br>
-                                   <span class="titulo" >${this.titulo} </span>
+                                   <a  href="libro.html"><span class="titulo">${this.titulo} </span></a>
                                    <br>
                                    <span class="Precio"  >$ ${this.precio}</span>
                               
@@ -27,6 +27,21 @@ class Libro{
           } 
           
          
+          
+
+          // asInnerHTMLForBookPage(){
+               
+          //      return (
+          //           `<div>
+          //                <h1>${this.title}</h1>
+
+          //                     <img src="/css/images/libro${this.id}" alt="">
+
+          //                     <span>{this.title}</span> 
+          //                     <p id="descripcion">${this.descripcion}</p>
+
+          //           </div>`)
+
           
 
      }    

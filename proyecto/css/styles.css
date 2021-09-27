@@ -290,8 +290,24 @@ section > h1{
     text-shadow: 2px 2px 4px #4e4e4e81;
 
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'open sans', sans-serif;
+    font-size: 2vh;
+    height: 20vh;
+    width: 100vw;
+    background: linear-gradient(147deg,rgba(231, 245, 43, 0.829)0% , rgb(53, 158, 32)); 
+    padding: 20px 0px;
+    border-top: rgba(0, 0, 0, 0.842);
+}
 
-
+a {
+    text-decoration: none;
+    
+}
 
 
 

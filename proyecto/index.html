@@ -122,13 +122,13 @@
             
             <div id="books-holder-recommended">
 
-                <!-- <div  id="book-1" >
-                    <img  class="pad-style" src="./miniaturas/libro4.jpg" alt="">
+                 <div  id="book-1" >
+                    <img  class="pad-style"   href="libro.html"  src="./miniaturas/libro4.jpg" alt="">
                     <br>
                     <span class="titulo" > libro 4 </span>
                 </div>
                
-                <div id="book-2">
+               <!-- <div id="book-2">
                     <img  class="pad-style" src="./miniaturas/libro5.jpg" alt="" >
                     <br>
                     <span class="titulo"> libro 5 </span>
@@ -148,15 +148,24 @@
                 </div> -->
             </div>
         </section>
+        <footer>
+           
+            <span>E-mail : lopezfranco155@gmail.com</span>
 
+            <span>Celular : +59895826915</span>
+
+        </footer>
+        
 
 <script src="js/libros.js"></script>
 
 <script>
- 
+
 const librosHolderNew = document.getElementById('books-holder-new');
 const librosHolderMost = document.getElementById('books-holder-most')
 const librosHolderRecommended = document.getElementById('books-holder-recommended')
+const libroHolderBook = document.getElementById('holder-book')
+
 
 librosHolderNew.innerHTML="";
 librosHolderMost.innerHTML="";
@@ -205,6 +214,8 @@ let libros =[
             librosRecommended.forEach(librosRecommended => {
                 librosHolderRecommended.innerHTML += librosRecommended.asInnerHTMLForBooks()}) 
 
+
+    
 
 </script>
 
