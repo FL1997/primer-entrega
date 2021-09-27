@@ -18,7 +18,7 @@ class Libro{
                `<div  id="book-${this.id}" >
                                    <img  class="pad-style"  src="./miniaturas/libro${this.id}.jpg" alt="">
                                    <br>
-                                   <a  href="libro.html"><span class="titulo">${this.titulo} </span></a>
+                                   <a  href="libro1.html"><span class="titulo">${this.titulo} </span></a>
                                    <br>
                                    <span class="Precio"  >$ ${this.precio}</span>
                               
