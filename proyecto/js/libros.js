@@ -27,7 +27,26 @@ class Libro{
           } 
           
          
-          
+          // searchBook(){
+
+          //      let input = document.getElementById("search-bar").value 
+
+          //      if(input.length !== 0){
+
+                    
+
+          //      }
+
+          // }
+          //      renderSearch(){
+          //           return(`  <div>
+
+          //                     <span> ${this.titulo}, " " , '${this.precio}'  </span>
+
+          //                     </div>
+                              
+          //                     `)
+          //      }
 
           // asInnerHTMLForBookPage(){
                

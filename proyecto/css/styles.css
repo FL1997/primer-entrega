@@ -19,10 +19,25 @@ header{
     height: 9vh;
 
     background-size: contain ;
-    background: linear-gradient(180deg,rgba(236, 248, 60, 0.829)50% , rgb(54, 116, 42));
+    background: linear-gradient(180deg,rgba(236, 248, 60, 0.829)50% ,rgb(54, 116, 42));
 
 
 }
+
+header #logo{
+    
+    width: fit-content;
+    
+    height: 5vh;
+   margin-top: 1.5vh;
+   margin-left: 2vw;
+   
+
+}
+#header-logo{
+display: none;
+}
+
 
 nav{
     float: right;
@@ -43,10 +58,12 @@ nav{
     list-style-type: none;
     text-align: center;
 
- }                     
+ }                  
+ a{
+     color: black;
+ }   
 
 
- 
 
 
 
@@ -70,6 +87,7 @@ nav{
     grid-row: 2;
     align-self: center;
     display: block;
+    
 }
 #nosotros{
     grid-column: 4;
@@ -86,11 +104,17 @@ nav{
  #search-bar{
 
      width: 14rem;
+     height: 2rem;
      padding: 6px;
      grid-column: 7 ;
      grid-row: 2;
      justify-self: flex-end;
 
+    }
+    header >img{
+        
+        height: 7vh;
+        width: auto;
     }
 
  .btn-srch{
@@ -176,18 +200,18 @@ ul#libros:hover #cat {
 }
 
 
-section{
+    section{
 
-height: auto;
-width: 100vw; 
-margin-bottom: 5vh;
-}
+        height: auto;
+        width: 100vw; 
+        margin-bottom: 5vh;
+    }
 
-#new {
-   display: grid;
-   grid-template-rows:1fr 4fr;
-    padding: 5vh 20vw 5vh;                   
-    background-color: #e4e4e4;                       
+    #new {
+        display: grid;
+        grid-template-rows:1fr 4fr;
+        padding: 5vh 20vw 5vh;                   
+        background-color: #e4e4e4;                       
 
 
  }
@@ -196,7 +220,6 @@ margin-bottom: 5vh;
     display: grid;
    grid-template-columns: repeat(5,1fr);
    justify-items: center;
-
 
  }
 
@@ -266,13 +289,17 @@ width: 10vw;
 padding: 1vw ;
 background-color: rgb(245, 159, 48);
 
-
 }
-img{
-width: 240px;
-height: 370px;
-}
+    img{
+        width: 240px;
+        height: 370px;
+    }   
 
+div > div{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
 
 .pad-style:hover{
 transition: .2s;
@@ -307,9 +334,7 @@ footer{
 
 a {
     text-decoration: none;
-    
-     color: black;
- 
+    color:black
     
 }
 
@@ -323,6 +348,8 @@ a {
                 height: 7vh;
 
                 background-size: contain;}
+
+                
 
                 nav{
                                        
@@ -341,7 +368,9 @@ a {
 
 
             }
-            #inicio,#libros,#nosotros,#contacto,#carrito, ul li >a{
+
+        
+            #inicio,#libros,#nosotros,#contacto,#carrito, nav ul li >a{
 
 
                 color: black;
@@ -358,6 +387,7 @@ a {
             #search-bar{
 
                 width: 14vw;
+                height: 3vh;
                 padding: 6px;
                 margin-left:4rem ;
                 grid-column: 7 ;
@@ -403,6 +433,8 @@ a {
 
                 }
 
+              
+
             #books-holder-new {
                 display: grid;
                grid-template-columns: repeat(3,1fr);
@@ -434,7 +466,7 @@ a {
                 display: grid;
                 justify-items: center;
 
-                margin:1rem;
+               
                 max-width: 14vw;
                 font-size: 1rem;
 
@@ -460,7 +492,7 @@ a {
 
 
                 }
-}
+                
 
 @media (max-width: 700px) {
 
@@ -472,6 +504,25 @@ a {
         background-size: contain;
     }
 
+    header > img{
+        display: none;
+    }
+    
+    #header-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 9vh;
+        background-size: contain ;
+        background: linear-gradient(180deg,rgba(236, 248, 60, 0.829)50% ,rgb(54, 116, 42));
+                    }
+
+    #header-logo > img{
+            display: flex;
+            margin: 0px;;
+                
+        }
         nav{
            
             float: right;
@@ -490,7 +541,7 @@ a {
 
 
     }
-    #inicio,ul#libros,#nosotros,#contacto,#carrito, ul li >a{
+    #inicio,#libros,#nosotros,#contacto,#carrito, ul li >a{
 
 
         color: black;
@@ -526,6 +577,7 @@ a {
       
 
        }
+
     #carrito{
         grid-column: 9 !important;
     }
@@ -539,6 +591,7 @@ a {
         background-size:cover;
         background-attachment:fixed;
     }
+
     main  div >h1  {
         font-size: 3.5vw ;
         text-shadow: 4px 4px 4px black;
@@ -607,9 +660,9 @@ a {
         margin-left: 1rem;
         padding: 1vw ;
         background-color: rgb(245, 159, 48);
-
-
     }
+
+    
     div .titulo {
         display: grid;
         justify-items: center;
@@ -631,5 +684,8 @@ a {
            font-weight: 700;
            text-shadow:2px 2px 6px 2px, black ;
         }
+
+}
+
 
 }
